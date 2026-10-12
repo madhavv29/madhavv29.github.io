@@ -1,10 +1,10 @@
 :root {
-  --bg: #6e8269;
+  --bg: #f3f7f2;
   --text: #1c2b22;
-  --muted: #2a4133;
-  --faint: #304a3a;
-  --border: #1c2b22;
-  --accent: #99c8ad;
+  --muted: #4a5d50;
+  --faint: #8a9a8f;
+  --border: #d6e2d8;
+  --accent: #2f7d4f;
   --font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
