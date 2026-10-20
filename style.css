@@ -6,6 +6,7 @@
   --faint: #8f8e89;     /* dates, labels, nav */
   --line: #e7e6e1;      /* dividers, sphere grid */
   --line-strong: #cfcec8;
+  --panel: #f3f3ef;     /* Bloch sphere panel background */
   --qubit: #196e42;     /* Bloch state vector */
 
   --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -147,15 +148,18 @@ h2 {
 .prose img { max-width: 100%; border-radius: 8px; margin: 8px 0 16px; }
 
 /* ---------- Bloch sphere ---------- */
+/* A softly tinted panel, aligned with the content column above */
 .bloch {
-  margin-top: 88px;
-  padding-top: 48px;
-  border-top: 1px solid var(--line);
+  margin: 80px 0 0 var(--gutter);
+  padding: 32px 24px 28px;
+  background: var(--panel);
+  border-radius: 16px;
   display: grid;
-  grid-template-columns: 1fr minmax(240px, 300px) 1fr;
+  grid-template-columns: max-content minmax(200px, 260px) max-content;
   grid-template-areas: "read fig ctrl";
+  justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .bloch-figure { grid-area: fig; margin: 0; text-align: center; }
@@ -168,7 +172,7 @@ h2 {
 
 .bloch-readout { grid-area: read; font-family: var(--mono); font-size: 14px; }
 .readout-item + .readout-item { margin-top: 14px; }
-.readout-main { color: var(--text); font-size: 16px; }
+.readout-main { color: var(--text); font-size: 15px; white-space: nowrap; }
 .readout-main .sym { font-family: var(--font); font-style: italic; }
 .readout-sub { color: var(--faint); font-size: 12.5px; }
 .readout-last {
@@ -184,17 +188,18 @@ h2 {
 .qbtn {
   font: inherit;
   font-size: 14px;
-  padding: 8px 12px;
+  padding: 8px 11px;
   border: 1px solid var(--line-strong);
   border-radius: 8px;
   background: #fff;
   color: var(--text);
   text-align: left;
+  white-space: nowrap;
   cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
 }
 .qbtn:hover { border-color: var(--text); }
-.qbtn:active { background: #f1f1ed; }
+.qbtn:active { background: #ecece7; }
 .qbtn:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
 .qbtn.primary { background: var(--text); border-color: var(--text); color: var(--bg); }
 .qbtn.primary:hover { background: #33332f; }
@@ -210,8 +215,11 @@ h2 {
   .site-nav { justify-content: flex-end; }
   .indent { padding-left: 0; }
   .bloch {
+    margin-left: 0;
+    padding: 24px 16px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "fig fig" "read ctrl";
+    justify-content: stretch;
     gap: 20px;
   }
   .bloch-figure { max-width: 320px; margin: 0 auto; width: 100%; }
