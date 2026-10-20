@@ -3,42 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madhav</title>
+  <title>Madhav Venkatachalam</title>
+  <meta name="description" content="Madhav Venkatachalam: Applied Physics and Mathematics at Cornell University.">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Madhav Venkatachalam</h1> <!-- EDIT: your full name -->
-      <nav class="social">
-        <!-- EDIT: your email -->
-        <a href="mailto:mv498@cornell.edu" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="5" width="18" height="14" rx="2"/>
-            <path d="M3 7l9 6 9-6"/>
-          </svg>
+  <div class="page">
+
+    <!-- ===== HEADER (same on every page) ===== -->
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Home"><img src="logo.png" alt=""></a>
+      <div class="who">
+        <h1 class="name">Madhav Venkatachalam</h1>
+        <p class="tagline">Applied Physics and Mathematics at Cornell University</p>
+      </div>
+      <nav class="site-nav">
+        <a href="mailto:mv498@cornell.edu" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
         </a>
-        <!-- EDIT: your LinkedIn URL -->
-        <a href="https://www.linkedin.com/in/madhav-venkatachalam/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM8 19H5V9h3v10zM6.5 7.7a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM19 19h-3v-5c0-1.2-.4-2.1-1.6-2.1-1.1 0-1.6.8-1.6 2.1v5h-3V9h2.9v1.4c.4-.8 1.4-1.6 2.9-1.6 2.3 0 3.4 1.4 3.4 4.2V19z"/>
-          </svg>
+        <a href="https://www.linkedin.com/in/madhav-venkatachalam/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM8 19H5V9h3v10zM6.5 7.7a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM19 19h-3v-5c0-1.2-.4-2.1-1.6-2.1-1.1 0-1.6.8-1.6 2.1v5h-3V9h2.9v1.4c.4-.8 1.4-1.6 2.9-1.6 2.3 0 3.4 1.4 3.4 4.2V19z"/></svg>
         </a>
+        <a href="https://github.com/madhavv29" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <a href="documents/resume.pdf" target="_blank" rel="noopener" aria-label="Resume" title="Resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>
+        </a>
+        <a class="nav-text" href="blog.html">Blog</a>
       </nav>
     </header>
 
-    <!-- EDIT: your intro -->
-    <section class="intro">
-      <p>Hey, I'm Madhav. I'm majoring in Applied Physics at Cornell with a minor in Mathematics. I'm currently interested in experimental condensed matter physics and quantum hardware, as well as quantum and photonic computing.</p>
-      <p>On campus, I'm a part of the Fuchs Group, Cornell Hyperloop (Project Team), Cornell Venture Capital, and the Quantum Computing Association at Cornell. I'm also a TA for AEP1100: Lasers and Photonics.</p>
-      <p>I like following and playing Tennis, collecting Vinyl Records, and watching movies. I'm an aspiring Horologist.</p>
-      <p>You can find my resume <a href="documents/resume.pdf" target="_blank" rel="noopener">here</a>.</p>
+    <main>
+      <!-- ===== INTERESTS ===== -->
+      <section class="interests indent">
+        <p><span class="label">Interests:</span> Experimental Condensed Matter Physics, Quantum and Photonic Computing, Controlled Fusion, Quantitative Finance</p>
+        <p><span class="label">Other Interests:</span> Vinyl Collecting, Tennis, Rubik's Cubes, Cricket, Movies, Horology</p>
+      </section>
+
+      <!-- ===== PROJECTS =====
+           To add a project: copy one <li> ... </li> block below and edit it,
+           then copy a page in projects/ and rename it. -->
+      <section class="section indent" id="projects">
+        <h2>Projects</h2>
+        <ul class="rows">
+          <li>
+            <a href="projects/fuchs-group.html">
+              <span class="row-top"><span class="row-title">Fuchs Group</span><span class="row-meta">Sep 2025 – Present</span></span>
+              <span class="row-desc">Current progress from my time in the Fuchs Research Group.</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects/hyperloop.html">
+              <span class="row-top"><span class="row-title">Hyperloop</span><span class="row-meta">Aug 2026 – Present</span></span>
+              <span class="row-desc">My work as part of the magnetics subteam of Hyperloop.</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects/katz-lab.html">
+              <span class="row-top"><span class="row-title">Katz Lab</span><span class="row-meta">Dec 2025 – May 2026</span></span>
+              <span class="row-desc">Designing RLC filterboards for Trapped Ion quantum control.</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects/cornell-venture-capital.html">
+              <span class="row-top"><span class="row-title">Cornell Venture Capital</span><span class="row-meta">Feb 2026 – May 2026</span></span>
+              <span class="row-desc">Delivering investment theses on the Physical Intelligence industry.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- ===== BLOCH SPHERE (logic lives in bloch.js) ===== -->
+    <section class="bloch" aria-label="Interactive Bloch sphere">
+      <div class="bloch-readout">
+        <div class="readout-item">
+          <div class="readout-main"><span class="sym">θ</span> = <span id="theta-val">–</span></div>
+          <div class="readout-sub" id="theta-sub">&nbsp;</div>
+        </div>
+        <div class="readout-item">
+          <div class="readout-main"><span class="sym">φ</span> = <span id="phi-val">–</span></div>
+          <div class="readout-sub" id="phi-sub">&nbsp;</div>
+        </div>
+        <p class="readout-last" id="last-result" aria-live="polite">Random state</p>
+      </div>
+
+      <figure class="bloch-figure">
+        <svg id="bloch" viewBox="0 0 320 320" role="img" aria-label="Bloch sphere showing the current qubit state"></svg>
+        <figcaption>
+          <math display="block">
+            <mrow>
+              <mo stretchy="false" lspace="0" rspace="0">|</mo><mi>ψ</mi><mo stretchy="false" lspace="0">⟩</mo>
+              <mo>=</mo>
+              <mi>cos</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo>)</mo></mrow>
+              <mo stretchy="false" lspace="0" rspace="0">|</mo><mn>0</mn><mo stretchy="false" lspace="0">⟩</mo>
+              <mo>+</mo>
+              <msup><mi>e</mi><mrow><mi>i</mi><mi>φ</mi></mrow></msup><mspace width="0.2em"/>
+              <mi>sin</mi><mo>&#x2061;</mo><mrow><mo>(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo>)</mo></mrow>
+              <mo stretchy="false" lspace="0" rspace="0">|</mo><mn>1</mn><mo stretchy="false" lspace="0">⟩</mo>
+            </mrow>
+          </math>
+        </figcaption>
+      </figure>
+
+      <div class="bloch-controls">
+        <button class="qbtn primary" type="button" data-action="random">Randomize state</button>
+        <button class="qbtn" type="button" data-action="x">Measure X basis</button>
+        <button class="qbtn" type="button" data-action="y">Measure Y basis</button>
+        <button class="qbtn" type="button" data-action="z">Measure Z basis</button>
+      </div>
     </section>
 
-    <div class="buttons">
-      <a class="btn" href="blog.html">Blog</a>
-      <a class="btn" href="projects.html">Projects</a>
-    </div>
-  </main>
+  </div>
+  <script src="bloch.js"></script>
 </body>
 </html>
