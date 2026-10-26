@@ -40,7 +40,7 @@
     <main>
       <article class="prose indent">
         <a class="back" href="../index.html#projects">&larr; Projects</a>
-        <h1>Implementation of the Quantum Counterfeit Coin algorithm</h1>
+        <h1>Implementation of the Quantum Counterfeit Coin Algorithm</h1>
         <div class="date">October 2026</div>
         <!-- <img src="../images/photo.jpg" alt="Describe the image"> -->
         <p>Finding all k fake coins from N coins with a balance that only says “balanced” or “tilted” takes Ω(k log(N/k)) weighings classically. In 2012, <a href="https://arxiv.org/abs/1009.0416" target="_blank" rel="noopener">Iwama et al.</a> proved a quantum algorithm needs only O(k^¼), independent of N. I built their whole algorithm as one coherent Qiskit circuit, including engineering a reversible balance oracle, and a circuit that prepares every even split of the selected coins at once, across every selection in superposition. It also meant replacing the paper's measurement-based search step with fixed-point amplitude amplification, since measuring mid-circuit would collapse the superposition the algorithm depends on. The circuit recovers the full counterfeit set in 333 test instances (up to 12 coins and 44 qubits) with at least 98.7% success. At N=10, k=4, five queries succeed 99.6% of the time, where no classical strategy with five weighings can beat 15%.</p>
