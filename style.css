@@ -168,11 +168,15 @@ h2 {
   border-radius: 16px;
   display: grid;
   grid-template-columns: max-content minmax(200px, 260px) max-content;
-  grid-template-areas: "read fig ctrl";
+  grid-template-areas:
+    "title title title"
+    "read  fig   ctrl";
   justify-content: space-between;
   align-items: center;
   gap: 16px;
 }
+
+.bloch-title { grid-area: title; margin: 0 0 8px; text-align: center; }
 
 .bloch-figure { grid-area: fig; margin: 0; text-align: center; }
 .bloch-figure svg { display: block; width: 100%; height: auto; overflow: visible; }
@@ -232,7 +236,7 @@ h2 {
     margin-left: 0;
     padding: 24px 16px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "fig fig" "read ctrl";
+    grid-template-areas: "title title" "fig fig" "read ctrl";
     justify-content: stretch;
     gap: 20px;
   }
