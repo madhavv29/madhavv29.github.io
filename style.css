@@ -159,7 +159,49 @@ h2 {
 .prose p { margin: 0 0 14px; }
 .prose img { max-width: 100%; border-radius: 8px; margin: 8px 0 16px; }
 
-/* ---------- Bloch sphere ---------- */
+/* ---------- Home-page photo ---------- */
+.photo-section { margin: 80px 0 0 var(--gutter); }
+.photo-slot {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--panel);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.photo-slot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.photo-slot.is-ready img { opacity: 1; }
+.photo-slot canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+.photo-slot:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+.photo-link { margin: 14px 0 0; text-align: center; font-size: 14px; }
+.photo-link a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.photo-link a:hover { color: var(--text); text-decoration-color: var(--text); }
+
+/* ---------- Bloch sphere (bloch.html) ---------- */
 /* A softly tinted panel, aligned with the content column above */
 .bloch {
   margin: 80px 0 0 var(--gutter);
@@ -175,6 +217,9 @@ h2 {
   align-items: center;
   gap: 16px;
 }
+
+.back-row { margin: 0; }
+.bloch--page { margin-top: 0; }
 
 .bloch-title { grid-area: title; margin: 0 0 8px; text-align: center; }
 
@@ -232,6 +277,7 @@ h2 {
   .site-header + .tagline { padding-left: 52px; }
   .site-nav { justify-content: flex-end; }
   .indent { padding-left: 0; }
+  .photo-section { margin-left: 0; }
   .bloch {
     margin-left: 0;
     padding: 24px 16px;
