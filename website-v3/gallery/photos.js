@@ -1,0 +1,26 @@
+// List of photos shown on the home page. To add one: put a .jpg in this folder and add its name here.
+window.GALLERY = [
+  "a16z.jpg",
+  "alaska-mountain.jpg",
+  "alaska-train.jpg",
+  "andrew-liam-halloween.jpg",
+  "arrth-chess.jpg",
+  "broadway.jpg",
+  "cornell-sunset.jpg",
+  "danang-vietnam.jpg",
+  "ezra-sarah-food.jpg",
+  "griffith-observatory.jpg",
+  "josh-liam-drinking-night.jpg",
+  "kenya-elephants.jpg",
+  "kenya-lions.jpg",
+  "liam-madhav-halloween.jpg",
+  "manasi-taran.jpg",
+  "nia-basu-monopoly.jpg",
+  "nyc-rainbow.jpg",
+  "ooty-class-trip.jpg",
+  "san-diego-drive-1.jpg",
+  "san-diego-drive-2.jpg",
+  "second-dam.jpg",
+  "singapore-giant-trees.jpg",
+  "us-open.jpg"
+];
